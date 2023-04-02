@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Portafolio GitHub</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Portafolio</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">home</a>
+                </li>
+                <li>
+                    <a href="">features</a>
+                </li>
+                <li>
+                    <a href="">seccion</a>
+                </li>
+                <li>
+                    <a href="">seccion</a>
+                </li>
+                <li>
+                    <a href="">seccion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="presentation">
+        <h1>Software development junior</h1>
+        <p>Soy un desarrollador de software con experiencia en diversas tecnologías, incluyendo Python, JavaScript y
+            MySQL
+            conocimiento en amplia gama de tecnologías que me permite ofrecer soluciones eficientes y escalables para
+            una amplia variedad de proyectos y problemas.</p>
+    </div>
+
+    <div class="contenedor">
+        <div class="tec">
+            <img src="img/Python.svg.png" alt="" placeholder="javi">
+        </div>
+        <div class="tec">
+            <img src="img/js.png" alt="">
+        </div>
+        <div class="tec">
+            <img src="img/ms.png" alt="">
+        </div>
+    </div>
+
+    <div class="contenedor-pyp">
+        <h1>Proyectos personales</h1>
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger")
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active")
+        }
+    </script>
+   
+
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #223240;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background: #223240;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #9FD948;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;  
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: #223240;
+    background: #9FD948;
+} 
+.nav-bar ul li a.active{
+    color: #223240;
+    background: #9FD948;
+}
+.presentation{
+    height: 200px;
+   
+    background-color: #223240;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.presentation p{
+    width: 70%;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.presentation h1{
+    color: #9FD948;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.presentation h1:hover{
+    transform: scale(1.25);
+    transition: 10s;
+    border-radius: 5px;
+    
+}
+.contenedor{
+    background-color: #223240;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.contenedor .tec{
+    background-color: #223240;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 2%;
+}
+.contenedor .tec img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+.contenedor .tec img:hover{
+    transform: scale(1.25);
+    background: #223240;
+    border-radius: 10px;
+}
+.contenedor-pyp{
+    height: 137px;
+    background-color: #223240;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+}
+.contenedor-pyp p{
+    width: 70%;
+ 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor-pyp h1{
+    color: #9FD948;
+    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+.contenedor-pyp h1:hover{
+    transform: scale(1.25);
+    transition: 10s;
+    border-radius: 5px;
+        
+}
+
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #9FD948;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        opacity: 12;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar ul li a.active{
+        color: #223240;
+        background: #9FD948;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+    .contenedor .tec img{
+        width: 100%;
+        height: 100%;
+        transition: all 300ms;
+        position: static;
+    }
+    @media only screen and (max-width: 600px){
+        .hamburger{
+            display: block;
+            cursor: pointer;
+        }
+        .hamburger .line{
+            width: 30px;
+            height: 3px;
+            background:  #9FD948;
+            margin: 6px 0;
+        }
+        .presentation{
+            height: 200px;
+        }
+        .presentation h1{
+      
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+        
+        }
+        .presentation p{
+            display: none
+        }
+        .contenedor{
+            background-color: #223240;
+            width: 100%;
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            height: 200px;
+        }
+        .contenedor .tec{
+            background-color: #223240;
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+       
+        }
+        .contenedor .tec img{
+            width: 100%;
+            height: 100%;
+            transition: all 300ms;
+            position: static;
+        }
+        .contenedor .tec img:hover{
+            transform: scale(1.25);
+            background: #223240;
+            border-radius: 10px;
+        }
+        .contenedor-pyp{
+            height: 137px;
+            background-color: #223240;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 76%;
+        }
+        .contenedor-pyp h1{
+            color: #9FD948;
+            font-family: 'Lobster', cursive;
+            font-family: 'Merriweather', serif;
+            font-family: 'Poppins', sans-serif;
+           
+
+        
+        }
+       
+    }
+}
